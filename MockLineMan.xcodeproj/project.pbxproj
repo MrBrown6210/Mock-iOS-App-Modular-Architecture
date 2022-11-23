@@ -26,7 +26,9 @@
 		E80DC255292CF551005AF35E /* InitialPageView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E80DC253292CF551005AF35E /* InitialPageView.storyboard */; };
 		E80DC258292CF5E0005AF35E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E80DC257292CF5E0005AF35E /* Assets.xcassets */; };
 		E80DC259292CF5E0005AF35E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E80DC257292CF5E0005AF35E /* Assets.xcassets */; };
+		E859E0A7292E349200759379 /* HomePageScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = E859E0A6292E349200759379 /* HomePageScene.swift */; };
 		E8D25404292E1900006FF6DD /* Core.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = E8D25403292E1900006FF6DD /* Core.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		E8F3AD99292E2D29007E5602 /* HomePage.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = E8F3AD98292E2D29007E5602 /* HomePage.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +56,7 @@
 			dstSubfolderSpec = 10;
 			files = (
 				E8D25404292E1900006FF6DD /* Core.framework in Copy Frameworks */,
+				E8F3AD99292E2D29007E5602 /* HomePage.framework in Copy Frameworks */,
 			);
 			name = "Copy Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -87,7 +90,10 @@
 		E80DC24F292CF537005AF35E /* InitialPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InitialPageViewController.swift; sourceTree = "<group>"; };
 		E80DC253292CF551005AF35E /* InitialPageView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = InitialPageView.storyboard; sourceTree = "<group>"; };
 		E80DC257292CF5E0005AF35E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E84C80BC292E200B00B7A882 /* HomePage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HomePage.framework; path = "../../../Library/Developer/Xcode/DerivedData/MockLineMan-ahvmmgeddypcnffqyahrkohpqcxn/Build/Products/Debug-iphoneos/HomePage.framework"; sourceTree = "<group>"; };
+		E859E0A6292E349200759379 /* HomePageScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePageScene.swift; sourceTree = "<group>"; };
 		E8D25403292E1900006FF6DD /* Core.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Core.framework; path = "../../../Library/Developer/Xcode/DerivedData/MockLineMan-ahvmmgeddypcnffqyahrkohpqcxn/Build/Products/Debug-iphonesimulator/Core.framework"; sourceTree = "<group>"; };
+		E8F3AD98292E2D29007E5602 /* HomePage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HomePage.framework; path = "../../../Library/Developer/Xcode/DerivedData/MockLineMan-ahvmmgeddypcnffqyahrkohpqcxn/Build/Products/Debug-iphonesimulator/HomePage.framework"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -144,6 +150,8 @@
 		E80DC20D292CF22B005AF35E = {
 			isa = PBXGroup;
 			children = (
+				E84C80BC292E200B00B7A882 /* HomePage.framework */,
+				E8F3AD98292E2D29007E5602 /* HomePage.framework */,
 				E8D25403292E1900006FF6DD /* Core.framework */,
 				E80DC218292CF22B005AF35E /* MockLineMan */,
 				E80DC232292CF230005AF35E /* MockLineManTests */,
@@ -167,6 +175,7 @@
 		E80DC218292CF22B005AF35E /* MockLineMan */ = {
 			isa = PBXGroup;
 			children = (
+				E859E0A5292E347D00759379 /* Navigation */,
 				E80DC256292CF5C2005AF35E /* Assets */,
 				E80DC24C292CF4E7005AF35E /* Scenes */,
 				E80DC219292CF22B005AF35E /* AppDelegate.swift */,
@@ -237,6 +246,14 @@
 				E80DC257292CF5E0005AF35E /* Assets.xcassets */,
 			);
 			path = Assets;
+			sourceTree = "<group>";
+		};
+		E859E0A5292E347D00759379 /* Navigation */ = {
+			isa = PBXGroup;
+			children = (
+				E859E0A6292E349200759379 /* HomePageScene.swift */,
+			);
+			path = Navigation;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -483,6 +500,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E859E0A7292E349200759379 /* HomePageScene.swift in Sources */,
 				E80DC21E292CF22B005AF35E /* ViewController.swift in Sources */,
 				E80DC250292CF537005AF35E /* InitialPageViewController.swift in Sources */,
 				E80DC21A292CF22B005AF35E /* AppDelegate.swift in Sources */,

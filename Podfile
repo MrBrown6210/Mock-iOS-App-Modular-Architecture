@@ -3,9 +3,12 @@
 
 workspace 'MockLineMan'
 
+use_frameworks!
+
 # Core Module
 def core_pod
   pod 'Alamofire', '~> 5.6'
+  pod 'RxSwift', '~> 6.5'
 end
 
 def application_pod
@@ -13,14 +16,12 @@ def application_pod
 end
 
 target 'Core' do
-  use_frameworks!
   project 'Shared/Core/Core.project'
   workspace 'Shared/Core.xcworkspace'
   core_pod
 end
 
 target 'MockLineMan' do
-  use_frameworks!
   application_pod
 
   target 'MockLineManTests' do
@@ -32,4 +33,10 @@ target 'MockLineMan' do
     # Pods for testing
   end
 
+end
+
+target 'HomePage' do
+  project 'Features/HomePage/HomePage.xcodeproj'
+  workspace 'Features/HomePage.xcworkspace'
+  application_pod
 end

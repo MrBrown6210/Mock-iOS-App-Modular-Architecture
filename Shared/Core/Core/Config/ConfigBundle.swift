@@ -10,4 +10,5 @@ import Foundation
 public struct ConfigBundle {
     public static var main: Bundle          = .main
     public static var core: Bundle          = Bundle(identifier: "com.ratchata.Core") ?? .main
+    public static var homePage: Bundle          = Bundle(identifier: "com.ratchata.HomePage") ?? .main
 }

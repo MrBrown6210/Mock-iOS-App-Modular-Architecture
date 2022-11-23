@@ -6,6 +6,8 @@
 //
 
 import UIKit
+import Core
+import HomePage
 
 class InitialPageViewController: UIViewController {
     
@@ -20,6 +22,10 @@ class InitialPageViewController: UIViewController {
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
+        let scene: SceneType = HomePageScene.homePage
+        let transition: SceneTransitionType = .root(scene: scene)
+        let coordinator: SceneCoordinator = SceneCoordinator()
+        coordinator.transition(type: transition)
     }
     
 

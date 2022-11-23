@@ -8,6 +8,13 @@
       location = "group:Podfile.lock">
    </FileRef>
    <Group
+      location = "group:Features"
+      name = "Features">
+      <FileRef
+         location = "group:HomePage/HomePage.xcodeproj">
+      </FileRef>
+   </Group>
+   <Group
       location = "group:Shared"
       name = "Shared">
       <FileRef
