@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		52C956C05028EB5F1FFDCE7A /* Pods_Delivery.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A5896E40A002CD7C7BD4E4D8 /* Pods_Delivery.framework */; };
+		E828256F292EAB6300720440 /* Core.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = E828256E292EAB6300720440 /* Core.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		E84B4F6D292E9931000DE1BC /* Delivery.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E84B4F62292E9931000DE1BC /* Delivery.framework */; };
 		E84B4F72292E9931000DE1BC /* DeliveryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E84B4F71292E9931000DE1BC /* DeliveryTests.swift */; };
 		E8D8771F292E9A9D0014DACD /* DeliveryHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8D8771E292E9A9D0014DACD /* DeliveryHomeViewController.swift */; };
@@ -24,10 +25,25 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		E828256D292EAB3300720440 /* Copy Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				E828256F292EAB6300720440 /* Core.framework in Copy Frameworks */,
+			);
+			name = "Copy Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		0E8A547176C9ED6E1D610EF7 /* Pods-Delivery.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Delivery.debug.xcconfig"; path = "Target Support Files/Pods-Delivery/Pods-Delivery.debug.xcconfig"; sourceTree = "<group>"; };
 		3049BD6891A12FDD3A886FDB /* Pods-Delivery.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Delivery.release.xcconfig"; path = "Target Support Files/Pods-Delivery/Pods-Delivery.release.xcconfig"; sourceTree = "<group>"; };
 		A5896E40A002CD7C7BD4E4D8 /* Pods_Delivery.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Delivery.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E828256E292EAB6300720440 /* Core.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Core.framework; path = "../../../../../Library/Developer/Xcode/DerivedData/MockLineMan-ahvmmgeddypcnffqyahrkohpqcxn/Build/Products/Debug-iphonesimulator/Core.framework"; sourceTree = "<group>"; };
 		E84B4F62292E9931000DE1BC /* Delivery.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Delivery.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E84B4F6C292E9931000DE1BC /* DeliveryTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DeliveryTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E84B4F71292E9931000DE1BC /* DeliveryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeliveryTests.swift; sourceTree = "<group>"; };
@@ -68,6 +84,7 @@
 		E84B4F58292E9931000DE1BC = {
 			isa = PBXGroup;
 			children = (
+				E828256E292EAB6300720440 /* Core.framework */,
 				E84B4F64292E9931000DE1BC /* Delivery */,
 				E84B4F70292E9931000DE1BC /* DeliveryTests */,
 				E84B4F63292E9931000DE1BC /* Products */,
@@ -164,6 +181,7 @@
 				E84B4F5E292E9931000DE1BC /* Sources */,
 				E84B4F5F292E9931000DE1BC /* Frameworks */,
 				E84B4F60292E9931000DE1BC /* Resources */,
+				E828256D292EAB3300720440 /* Copy Frameworks */,
 			);
 			buildRules = (
 			);

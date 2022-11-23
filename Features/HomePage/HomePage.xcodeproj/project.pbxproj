@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		30272BE703DEE66BC250937F /* Pods_HomePage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 229D2A4FA61AD10D520FE890 /* Pods_HomePage.framework */; };
+		E8282572292EAC0300720440 /* Core.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = E8282571292EAC0300720440 /* Core.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		E8282575292EAF0200720440 /* HomePageOpener.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8282574292EAF0200720440 /* HomePageOpener.swift */; };
 		E84C80AD292E1FE900B7A882 /* HomePage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E84C80A2292E1FE800B7A882 /* HomePage.framework */; };
 		E84C80B2292E1FE900B7A882 /* HomePageTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E84C80B1292E1FE900B7A882 /* HomePageTests.swift */; };
 		E8F3AD95292E2326007E5602 /* HomePageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8F3AD94292E2326007E5602 /* HomePageViewController.swift */; };
@@ -24,10 +26,26 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		E8282570292EABF700720440 /* Copy Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				E8282572292EAC0300720440 /* Core.framework in Copy Frameworks */,
+			);
+			name = "Copy Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		229D2A4FA61AD10D520FE890 /* Pods_HomePage.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HomePage.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8A0469AD2D3291499ED07C36 /* Pods-HomePage.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HomePage.debug.xcconfig"; path = "Target Support Files/Pods-HomePage/Pods-HomePage.debug.xcconfig"; sourceTree = "<group>"; };
 		B2462277978B1DD676B32886 /* Pods-HomePage.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HomePage.release.xcconfig"; path = "Target Support Files/Pods-HomePage/Pods-HomePage.release.xcconfig"; sourceTree = "<group>"; };
+		E8282571292EAC0300720440 /* Core.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Core.framework; path = "../../../../../Library/Developer/Xcode/DerivedData/MockLineMan-ahvmmgeddypcnffqyahrkohpqcxn/Build/Products/Debug-iphonesimulator/Core.framework"; sourceTree = "<group>"; };
+		E8282574292EAF0200720440 /* HomePageOpener.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePageOpener.swift; sourceTree = "<group>"; };
 		E84C80A2292E1FE800B7A882 /* HomePage.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = HomePage.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E84C80AC292E1FE900B7A882 /* HomePageTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HomePageTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E84C80B1292E1FE900B7A882 /* HomePageTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePageTests.swift; sourceTree = "<group>"; };
@@ -73,9 +91,18 @@
 			path = ../../Pods;
 			sourceTree = "<group>";
 		};
+		E8282573292EAEF300720440 /* Navigation */ = {
+			isa = PBXGroup;
+			children = (
+				E8282574292EAF0200720440 /* HomePageOpener.swift */,
+			);
+			path = Navigation;
+			sourceTree = "<group>";
+		};
 		E84C8098292E1FE800B7A882 = {
 			isa = PBXGroup;
 			children = (
+				E8282571292EAC0300720440 /* Core.framework */,
 				E84C80A4292E1FE800B7A882 /* HomePage */,
 				E84C80B0292E1FE900B7A882 /* HomePageTests */,
 				E84C80A3292E1FE800B7A882 /* Products */,
@@ -96,6 +123,7 @@
 		E84C80A4292E1FE800B7A882 /* HomePage */ = {
 			isa = PBXGroup;
 			children = (
+				E8282573292EAEF300720440 /* Navigation */,
 				E8F3AD90292E227A007E5602 /* Scenes */,
 			);
 			path = HomePage;
@@ -164,6 +192,7 @@
 				E84C809E292E1FE800B7A882 /* Sources */,
 				E84C809F292E1FE800B7A882 /* Frameworks */,
 				E84C80A0292E1FE800B7A882 /* Resources */,
+				E8282570292EABF700720440 /* Copy Frameworks */,
 			);
 			buildRules = (
 			);
@@ -278,6 +307,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E8282575292EAF0200720440 /* HomePageOpener.swift in Sources */,
 				E8F3AD95292E2326007E5602 /* HomePageViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

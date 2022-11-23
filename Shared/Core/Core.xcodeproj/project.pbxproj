@@ -13,6 +13,18 @@
 		E859E09F292E306C00759379 /* SceneCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E859E09E292E306C00759379 /* SceneCoordinator.swift */; };
 		E859E0A2292E335300759379 /* UIViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E859E0A1292E335300759379 /* UIViewController+Extension.swift */; };
 		E859E0A4292E33A700759379 /* UIWindow+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E859E0A3292E33A700759379 /* UIWindow+Extension.swift */; };
+		E8A3B353292EA45700566B12 /* UILabel+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8A3B352292EA45700566B12 /* UILabel+Extension.swift */; };
+		E8A3B355292EA49400566B12 /* UIFont+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8A3B354292EA49400566B12 /* UIFont+Extension.swift */; };
+		E8A3B358292EA53200566B12 /* FontsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8A3B357292EA53200566B12 /* FontsManager.swift */; };
+		E8A3B360292EA5D700566B12 /* DBHeaventt-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E8A3B35B292EA5D700566B12 /* DBHeaventt-Light.ttf */; };
+		E8A3B361292EA5D700566B12 /* DBHeavent-Me.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E8A3B35C292EA5D700566B12 /* DBHeavent-Me.ttf */; };
+		E8A3B362292EA5D700566B12 /* DBHeavent-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E8A3B35D292EA5D700566B12 /* DBHeavent-Bold.ttf */; };
+		E8A3B363292EA5D700566B12 /* DBHeavent-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E8A3B35E292EA5D700566B12 /* DBHeavent-Thin.ttf */; };
+		E8A3B364292EA5D700566B12 /* DBHeavent.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E8A3B35F292EA5D700566B12 /* DBHeavent.ttf */; };
+		E8A3B367292EA6BD00566B12 /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8A3B366292EA6BD00566B12 /* Theme.swift */; };
+		E8A3B369292EA6D600566B12 /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8A3B368292EA6D600566B12 /* UIColor+Extension.swift */; };
+		E8A3B36B292EA78500566B12 /* UIButton+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8A3B36A292EA78500566B12 /* UIButton+Extension.swift */; };
+		E8A3B36D292EA7B700566B12 /* UIVIew+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8A3B36C292EA7B700566B12 /* UIVIew+Extension.swift */; };
 		E8D253E9292E11E0006FF6DD /* Core.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E8D253DE292E11E0006FF6DD /* Core.framework */; };
 		E8D253EE292E11E0006FF6DD /* CoreTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8D253ED292E11E0006FF6DD /* CoreTests.swift */; };
 		E8D253FB292E131E006FF6DD /* AppStoryboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8D253FA292E131E006FF6DD /* AppStoryboard.swift */; };
@@ -38,6 +50,18 @@
 		E859E09E292E306C00759379 /* SceneCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneCoordinator.swift; sourceTree = "<group>"; };
 		E859E0A1292E335300759379 /* UIViewController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extension.swift"; sourceTree = "<group>"; };
 		E859E0A3292E33A700759379 /* UIWindow+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIWindow+Extension.swift"; sourceTree = "<group>"; };
+		E8A3B352292EA45700566B12 /* UILabel+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UILabel+Extension.swift"; sourceTree = "<group>"; };
+		E8A3B354292EA49400566B12 /* UIFont+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIFont+Extension.swift"; sourceTree = "<group>"; };
+		E8A3B357292EA53200566B12 /* FontsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontsManager.swift; sourceTree = "<group>"; };
+		E8A3B35B292EA5D700566B12 /* DBHeaventt-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "DBHeaventt-Light.ttf"; sourceTree = "<group>"; };
+		E8A3B35C292EA5D700566B12 /* DBHeavent-Me.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "DBHeavent-Me.ttf"; sourceTree = "<group>"; };
+		E8A3B35D292EA5D700566B12 /* DBHeavent-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "DBHeavent-Bold.ttf"; sourceTree = "<group>"; };
+		E8A3B35E292EA5D700566B12 /* DBHeavent-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "DBHeavent-Thin.ttf"; sourceTree = "<group>"; };
+		E8A3B35F292EA5D700566B12 /* DBHeavent.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = DBHeavent.ttf; sourceTree = "<group>"; };
+		E8A3B366292EA6BD00566B12 /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
+		E8A3B368292EA6D600566B12 /* UIColor+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
+		E8A3B36A292EA78500566B12 /* UIButton+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIButton+Extension.swift"; sourceTree = "<group>"; };
+		E8A3B36C292EA7B700566B12 /* UIVIew+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIVIew+Extension.swift"; sourceTree = "<group>"; };
 		E8D253DE292E11E0006FF6DD /* Core.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Core.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E8D253E8292E11E0006FF6DD /* CoreTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CoreTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E8D253ED292E11E0006FF6DD /* CoreTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreTests.swift; sourceTree = "<group>"; };
@@ -106,8 +130,42 @@
 			children = (
 				E859E0A1292E335300759379 /* UIViewController+Extension.swift */,
 				E859E0A3292E33A700759379 /* UIWindow+Extension.swift */,
+				E8A3B352292EA45700566B12 /* UILabel+Extension.swift */,
+				E8A3B354292EA49400566B12 /* UIFont+Extension.swift */,
+				E8A3B368292EA6D600566B12 /* UIColor+Extension.swift */,
+				E8A3B36A292EA78500566B12 /* UIButton+Extension.swift */,
+				E8A3B36C292EA7B700566B12 /* UIVIew+Extension.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		E8A3B356292EA52300566B12 /* Theme */ = {
+			isa = PBXGroup;
+			children = (
+				E8A3B357292EA53200566B12 /* FontsManager.swift */,
+				E8A3B366292EA6BD00566B12 /* Theme.swift */,
+			);
+			path = Theme;
+			sourceTree = "<group>";
+		};
+		E8A3B359292EA5C300566B12 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				E8A3B35A292EA5D700566B12 /* Fonts */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
+		E8A3B35A292EA5D700566B12 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				E8A3B35B292EA5D700566B12 /* DBHeaventt-Light.ttf */,
+				E8A3B35C292EA5D700566B12 /* DBHeavent-Me.ttf */,
+				E8A3B35D292EA5D700566B12 /* DBHeavent-Bold.ttf */,
+				E8A3B35E292EA5D700566B12 /* DBHeavent-Thin.ttf */,
+				E8A3B35F292EA5D700566B12 /* DBHeavent.ttf */,
+			);
+			path = Fonts;
 			sourceTree = "<group>";
 		};
 		E8D253D4292E11E0006FF6DD = {
@@ -133,6 +191,7 @@
 		E8D253E0292E11E0006FF6DD /* Core */ = {
 			isa = PBXGroup;
 			children = (
+				E8A3B359292EA5C300566B12 /* Assets */,
 				E859E0A0292E334200759379 /* Extensions */,
 				E859E098292E2FD100759379 /* Navigation */,
 				E8D253FC292E13FC006FF6DD /* Config */,
@@ -152,6 +211,7 @@
 		E8D253F9292E12E9006FF6DD /* Utility */ = {
 			isa = PBXGroup;
 			children = (
+				E8A3B356292EA52300566B12 /* Theme */,
 				E8D253FA292E131E006FF6DD /* AppStoryboard.swift */,
 			);
 			path = Utility;
@@ -257,6 +317,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E8A3B361292EA5D700566B12 /* DBHeavent-Me.ttf in Resources */,
+				E8A3B362292EA5D700566B12 /* DBHeavent-Bold.ttf in Resources */,
+				E8A3B360292EA5D700566B12 /* DBHeaventt-Light.ttf in Resources */,
+				E8A3B363292EA5D700566B12 /* DBHeavent-Thin.ttf in Resources */,
+				E8A3B364292EA5D700566B12 /* DBHeavent.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -299,11 +364,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E8A3B353292EA45700566B12 /* UILabel+Extension.swift in Sources */,
+				E8A3B369292EA6D600566B12 /* UIColor+Extension.swift in Sources */,
+				E8A3B36B292EA78500566B12 /* UIButton+Extension.swift in Sources */,
 				E859E0A2292E335300759379 /* UIViewController+Extension.swift in Sources */,
+				E8A3B358292EA53200566B12 /* FontsManager.swift in Sources */,
 				E859E09A292E2FE000759379 /* SceneType.swift in Sources */,
+				E8A3B36D292EA7B700566B12 /* UIVIew+Extension.swift in Sources */,
+				E8A3B367292EA6BD00566B12 /* Theme.swift in Sources */,
 				E859E0A4292E33A700759379 /* UIWindow+Extension.swift in Sources */,
 				E859E09F292E306C00759379 /* SceneCoordinator.swift in Sources */,
 				E8D253FB292E131E006FF6DD /* AppStoryboard.swift in Sources */,
+				E8A3B355292EA49400566B12 /* UIFont+Extension.swift in Sources */,
 				E8D253FE292E1409006FF6DD /* ConfigBundle.swift in Sources */,
 				E859E09D292E305800759379 /* SceneTransitionType.swift in Sources */,
 			);

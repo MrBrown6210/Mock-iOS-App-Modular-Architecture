@@ -9,6 +9,7 @@ import Foundation
 import Core
 import UIKit
 import HomePage
+import Delivery
 
 public enum HomePageScene {
     case homePage
@@ -19,6 +20,7 @@ extension HomePageScene: SceneType {
         switch self {
         case .homePage:
             guard let homePage = HomePageViewController.instantiateFromAppStoryboard(appStoryboard: .custom(name: HomePageViewController.viewName, bundle: ConfigBundle.homePage)) else { return UIViewController() }
+            homePage.config(opener: opener())
             return homePage
         }
     }
@@ -36,6 +38,24 @@ extension HomePageScene: SceneType {
             return HomePageViewController.identifier
         }
     }
-    
-    
+        
+}
+
+extension HomePageScene {
+    func opener() -> (HomePageOpenerHandler) {
+        return { opener in
+            switch opener {
+            case .deliveryHome:
+                let scene: SceneType = DeliveryScene.deliveryHome
+                let transition: SceneTransitionType = .modal(scene: scene, animated: true, presentationStyle: .fullScreen)
+                let coordinator: SceneCoordinator = SceneCoordinator()
+                coordinator.transition(type: transition)
+            case .taxiHome:
+                let scene: SceneType = TaxiScene.taxiHome
+                let transition: SceneTransitionType = .modal(scene: scene, animated: true, presentationStyle: .fullScreen)
+                let coordinator: SceneCoordinator = SceneCoordinator()
+                coordinator.transition(type: transition)
+            }
+        }
+    }
 }
