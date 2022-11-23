@@ -40,3 +40,9 @@ target 'HomePage' do
   workspace 'Features/HomePage.xcworkspace'
   application_pod
 end
+
+target 'Delivery' do
+  project 'Features/Delivery/Delivery.xcodeproj'
+  workspace 'Features/Delivery.xcworkspace'
+  application_pod
+end
