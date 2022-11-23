@@ -46,3 +46,9 @@ target 'Delivery' do
   workspace 'Features/Delivery.xcworkspace'
   application_pod
 end
+
+target 'Taxi' do
+  project 'Features/Taxi/Taxi.xcodeproj'
+  workspace 'Features/Taxi.xcworkspace'
+  application_pod
+end

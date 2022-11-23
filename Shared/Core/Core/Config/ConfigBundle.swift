@@ -12,4 +12,5 @@ public struct ConfigBundle {
     public static var core: Bundle          = Bundle(identifier: "com.ratchata.Core") ?? .main
     public static var homePage: Bundle          = Bundle(identifier: "com.ratchata.HomePage") ?? .main
     public static var delivery: Bundle          = Bundle(identifier: "com.ratchata.Delivery") ?? .main
+    public static var taxi: Bundle          = Bundle(identifier: "com.ratchata.Taxi") ?? .main
 }

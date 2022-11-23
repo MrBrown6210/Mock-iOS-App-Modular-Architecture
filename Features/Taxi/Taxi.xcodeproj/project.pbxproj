@@ -1,0 +1,552 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1466960830553039D4963F4F /* Pods_Taxi.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B840D99768EB6211DC6503F /* Pods_Taxi.framework */; };
+		E8D87739292E9CA40014DACD /* Taxi.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E8D8772E292E9CA40014DACD /* Taxi.framework */; };
+		E8D8773E292E9CA40014DACD /* TaxiTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8D8773D292E9CA40014DACD /* TaxiTests.swift */; };
+		E8D8774D292E9CF70014DACD /* TaxiHome.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E8D8774C292E9CF70014DACD /* TaxiHome.storyboard */; };
+		E8D8774F292E9D010014DACD /* TaxiHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8D8774E292E9D010014DACD /* TaxiHomeViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E8D8773A292E9CA40014DACD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E8D87725292E9CA40014DACD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E8D8772D292E9CA40014DACD;
+			remoteInfo = Taxi;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		17999E374C5313902DE45C7A /* Pods-Taxi.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Taxi.release.xcconfig"; path = "Target Support Files/Pods-Taxi/Pods-Taxi.release.xcconfig"; sourceTree = "<group>"; };
+		1B840D99768EB6211DC6503F /* Pods_Taxi.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Taxi.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9DBBA70E886225A52D50AA9E /* Pods-Taxi.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Taxi.debug.xcconfig"; path = "Target Support Files/Pods-Taxi/Pods-Taxi.debug.xcconfig"; sourceTree = "<group>"; };
+		E8D8772E292E9CA40014DACD /* Taxi.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Taxi.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E8D87738292E9CA40014DACD /* TaxiTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TaxiTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E8D8773D292E9CA40014DACD /* TaxiTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaxiTests.swift; sourceTree = "<group>"; };
+		E8D8774C292E9CF70014DACD /* TaxiHome.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TaxiHome.storyboard; sourceTree = "<group>"; };
+		E8D8774E292E9D010014DACD /* TaxiHomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaxiHomeViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E8D8772B292E9CA40014DACD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1466960830553039D4963F4F /* Pods_Taxi.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E8D87735292E9CA40014DACD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E8D87739292E9CA40014DACD /* Taxi.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0D6C1BD6B1F8F7D1D33712C8 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9DBBA70E886225A52D50AA9E /* Pods-Taxi.debug.xcconfig */,
+				17999E374C5313902DE45C7A /* Pods-Taxi.release.xcconfig */,
+			);
+			name = Pods;
+			path = ../../Pods;
+			sourceTree = "<group>";
+		};
+		656CA6CA70E092AA15CE64C7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1B840D99768EB6211DC6503F /* Pods_Taxi.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E8D87724292E9CA40014DACD = {
+			isa = PBXGroup;
+			children = (
+				E8D87730292E9CA40014DACD /* Taxi */,
+				E8D8773C292E9CA40014DACD /* TaxiTests */,
+				E8D8772F292E9CA40014DACD /* Products */,
+				0D6C1BD6B1F8F7D1D33712C8 /* Pods */,
+				656CA6CA70E092AA15CE64C7 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		E8D8772F292E9CA40014DACD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E8D8772E292E9CA40014DACD /* Taxi.framework */,
+				E8D87738292E9CA40014DACD /* TaxiTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E8D87730292E9CA40014DACD /* Taxi */ = {
+			isa = PBXGroup;
+			children = (
+				E8D87748292E9CB50014DACD /* Scenes */,
+			);
+			path = Taxi;
+			sourceTree = "<group>";
+		};
+		E8D8773C292E9CA40014DACD /* TaxiTests */ = {
+			isa = PBXGroup;
+			children = (
+				E8D8773D292E9CA40014DACD /* TaxiTests.swift */,
+			);
+			path = TaxiTests;
+			sourceTree = "<group>";
+		};
+		E8D87748292E9CB50014DACD /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				E8D87749292E9CBD0014DACD /* TaxiHome */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		E8D87749292E9CBD0014DACD /* TaxiHome */ = {
+			isa = PBXGroup;
+			children = (
+				E8D8774B292E9CC70014DACD /* View */,
+				E8D8774A292E9CC20014DACD /* ViewController */,
+			);
+			path = TaxiHome;
+			sourceTree = "<group>";
+		};
+		E8D8774A292E9CC20014DACD /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				E8D8774E292E9D010014DACD /* TaxiHomeViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		E8D8774B292E9CC70014DACD /* View */ = {
+			isa = PBXGroup;
+			children = (
+				E8D8774C292E9CF70014DACD /* TaxiHome.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		E8D87729292E9CA40014DACD /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		E8D8772D292E9CA40014DACD /* Taxi */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E8D87742292E9CA40014DACD /* Build configuration list for PBXNativeTarget "Taxi" */;
+			buildPhases = (
+				469537BD282CC1B14B905B53 /* [CP] Check Pods Manifest.lock */,
+				E8D87729292E9CA40014DACD /* Headers */,
+				E8D8772A292E9CA40014DACD /* Sources */,
+				E8D8772B292E9CA40014DACD /* Frameworks */,
+				E8D8772C292E9CA40014DACD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Taxi;
+			productName = Taxi;
+			productReference = E8D8772E292E9CA40014DACD /* Taxi.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		E8D87737292E9CA40014DACD /* TaxiTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E8D87745292E9CA40014DACD /* Build configuration list for PBXNativeTarget "TaxiTests" */;
+			buildPhases = (
+				E8D87734292E9CA40014DACD /* Sources */,
+				E8D87735292E9CA40014DACD /* Frameworks */,
+				E8D87736292E9CA40014DACD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E8D8773B292E9CA40014DACD /* PBXTargetDependency */,
+			);
+			name = TaxiTests;
+			productName = TaxiTests;
+			productReference = E8D87738292E9CA40014DACD /* TaxiTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E8D87725292E9CA40014DACD /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1330;
+				LastUpgradeCheck = 1330;
+				TargetAttributes = {
+					E8D8772D292E9CA40014DACD = {
+						CreatedOnToolsVersion = 13.3.1;
+						LastSwiftMigration = 1330;
+					};
+					E8D87737292E9CA40014DACD = {
+						CreatedOnToolsVersion = 13.3.1;
+					};
+				};
+			};
+			buildConfigurationList = E8D87728292E9CA40014DACD /* Build configuration list for PBXProject "Taxi" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E8D87724292E9CA40014DACD;
+			productRefGroup = E8D8772F292E9CA40014DACD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E8D8772D292E9CA40014DACD /* Taxi */,
+				E8D87737292E9CA40014DACD /* TaxiTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E8D8772C292E9CA40014DACD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E8D8774D292E9CF70014DACD /* TaxiHome.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E8D87736292E9CA40014DACD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		469537BD282CC1B14B905B53 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Taxi-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E8D8772A292E9CA40014DACD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E8D8774F292E9D010014DACD /* TaxiHomeViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E8D87734292E9CA40014DACD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E8D8773E292E9CA40014DACD /* TaxiTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E8D8773B292E9CA40014DACD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E8D8772D292E9CA40014DACD /* Taxi */;
+			targetProxy = E8D8773A292E9CA40014DACD /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		E8D87740292E9CA40014DACD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		E8D87741292E9CA40014DACD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		E8D87743292E9CA40014DACD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9DBBA70E886225A52D50AA9E /* Pods-Taxi.debug.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = NN8SQ2H3KG;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ratchata.Taxi;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		E8D87744292E9CA40014DACD /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 17999E374C5313902DE45C7A /* Pods-Taxi.release.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = NN8SQ2H3KG;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ratchata.Taxi;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		E8D87746292E9CA40014DACD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = NN8SQ2H3KG;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ratchata.TaxiTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		E8D87747292E9CA40014DACD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = NN8SQ2H3KG;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ratchata.TaxiTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E8D87728292E9CA40014DACD /* Build configuration list for PBXProject "Taxi" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E8D87740292E9CA40014DACD /* Debug */,
+				E8D87741292E9CA40014DACD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E8D87742292E9CA40014DACD /* Build configuration list for PBXNativeTarget "Taxi" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E8D87743292E9CA40014DACD /* Debug */,
+				E8D87744292E9CA40014DACD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E8D87745292E9CA40014DACD /* Build configuration list for PBXNativeTarget "TaxiTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E8D87746292E9CA40014DACD /* Debug */,
+				E8D87747292E9CA40014DACD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E8D87725292E9CA40014DACD /* Project object */;
+}
