@@ -9,6 +9,8 @@ use_frameworks!
 def core_pod
   pod 'Alamofire', '~> 5.6'
   pod 'RxSwift', '~> 6.5'
+  pod 'Moya', '~> 15.0'
+  pod 'Moya/RxSwift', '~> 15.0'
 end
 
 def application_pod

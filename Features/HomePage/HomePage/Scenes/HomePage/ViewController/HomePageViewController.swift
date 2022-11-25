@@ -7,6 +7,7 @@
 
 import UIKit
 import Core
+import RxSwift
 
 public class HomePageViewController: UIViewController {
     
@@ -14,6 +15,13 @@ public class HomePageViewController: UIViewController {
     static public let identifier = "HomePageViewController"
     
     public var opener: HomePageOpenerHandler = nil
+    
+    private var viewModel: HomePageViewModel? {
+        didSet {
+            bindViewModel()
+        }
+    }
+    private var disposeBag = DisposeBag()
     
     @IBOutlet weak var welcomeLabel: UILabel!
     @IBOutlet weak var deliveryButton: UIButton!
@@ -29,10 +37,12 @@ public class HomePageViewController: UIViewController {
     public override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         navigationController?.setNavigationBarHidden(true, animated: false)
+        viewModel?.loadAdvertises()
     }
     
-    public func config(opener: HomePageOpenerHandler) {
+    public func config(opener: HomePageOpenerHandler, viewModel: HomePageViewModel = HomePageViewModel()) {
         self.opener = opener
+        self.viewModel = viewModel
     }
     
     func setupUI() {
@@ -54,16 +64,24 @@ public class HomePageViewController: UIViewController {
     @IBAction func taxiButtonWasTapped() {
         opener?(.taxiHome)
     }
-    
 
-    /*
-    // MARK: - Navigation
+}
 
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+// MARK: Binding ViewModel
+extension HomePageViewController {
+    func bindViewModel() {
+        didLoadAdvertisesSuccess()
     }
-    */
-
+    
+    private func didLoadAdvertisesSuccess() {
+        viewModel?
+            .output
+            .didLoadAdvertisesSuccess
+            .subscribe(onNext: { advertises in
+                let highestRateAdvertise = self.viewModel?.output.getHighestRateAdvertises()
+                if let data = highestRateAdvertise?.image?.convertToURL()?.convertToData(), let image = UIImage.init(data: data) {
+                    self.advertise.image = image
+                }
+            }).disposed(by: disposeBag)
+    }
 }

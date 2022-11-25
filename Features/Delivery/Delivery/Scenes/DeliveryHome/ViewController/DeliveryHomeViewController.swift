@@ -6,7 +6,6 @@
 //
 
 import UIKit
-import HomePage
 
 public class DeliveryHomeViewController: UIViewController {
     
